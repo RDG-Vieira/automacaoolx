@@ -9,9 +9,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Chrome().maximize_window()
 navegador.get("https://bestoptionnotebook.lojazap.com/")
-navegador.maximize_window()
 
 def pagina_iphones():
 #selecionar um elemento na tela find_element() apenas um lemento e find_elements() vários elementos
